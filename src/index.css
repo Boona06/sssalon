@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Rose-Gold Theme */
+    --background: 350 100% 99%; /* Nearly white rose */
+    --foreground: 330 10% 20%; /* Dark charcoal with hint of red */
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 10% 20%;
+
+    --primary: 345 50% 55%; /* Elegant dusty rose */
+    --primary-foreground: 350 100% 98%;
+
+    --secondary: 35 40% 90%; /* Pale gold/beige */
+    --secondary-foreground: 330 10% 20%;
+
+    --muted: 330 10% 95%;
+    --muted-foreground: 330 5% 50%;
+
+    --accent: 345 30% 95%;
+    --accent-foreground: 330 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 345 20% 90%;
+    --input: 345 20% 90%;
+    --ring: 345 50% 55%;
+
+    --radius: 0.75rem; /* Softer, rounder corners for feminine vibe */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
